@@ -1,0 +1,49 @@
+@charset "UTF";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html , body {
+    height:100vh ;
+    width:100vw ;
+    background-color: black;
+}
+
+body {
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+}
+
+section#telefone {
+    position: absolute;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 200px;
+    background-size: contain;
+}
+
+iframe#tela {
+    background-color: black;
+    position: absolute; /* Usando position absolute para centralizar melhor */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o iframe dentro do celular */
+    width: 86%; /* Tornando o tamanho do iframe mais responsivo */
+    height: 86%; /* Tornando o tamanho do iframe mais responsivo */
+    background: url('../imagens/tela-home.jpg') no-repeat center center;
+    background-size: cover; /* A imagem cobre todo o iframe */
+    border-radius: 8px;
+}
